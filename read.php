@@ -56,10 +56,10 @@ if($_GET["show"] == "one" && isset($_GET["id"])) {
         <td><?php echo $user->last_name; ?></td>
         <td><?php echo $user->age; ?></td>
         <td>
-          <a href="/update.php?id=<?php echo $user->id; ?>">edit</a>
+          <a href="update.php?id=<?php echo $user->id; ?>">edit</a>
         </td>
         <td>
-          <a href="/delete.php?id=<?php echo $user->id; ?>" onclick="confirm();">delete</a>
+          <a href="delete.php?id=<?php echo $user->id; ?>" onclick="confirm();">delete</a>
         </td>
     </tr>
     <?php } ?>
