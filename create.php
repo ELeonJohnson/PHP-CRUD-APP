@@ -17,7 +17,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 
     $id = $pdo->lastInsertId();
 
-    echo "<script>location.href='/read.php?show=one&id={$id}'</script>";
+    echo "<script>location.href='read.php?show=one&id={$id}'</script>";
   } catch(PDOException $e) {
     echo "<h4 style='color: red;'>".$e->getMessage(). "</h4>";
 
@@ -32,7 +32,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
     <title>CRUD</title>
   </head>
   <body>
-  <form action="/create.php" method="POST">
+  <form action="create.php" method="POST">
       <label for="first_name">First Name</label> <br>
       <input type="text" name="first_name" value=""> <br>
       <label for="last_name">Last Name</label> <br>
